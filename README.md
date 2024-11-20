@@ -69,33 +69,6 @@ $ python GetCode.py --dataset_name ffhq --code_type 's_mean_std'
 
 ### 테스트용 이미지 업로드
 아래 경로에 샘플용 이미지를 업로드 합니다. 샘플용 이미지는 레파지토리의 images/elon-musk.jpg 파일입니다.  
-![](images/elon-musk.jpg)
 ```
 /home/opc/demo/notebooks/styleclip_global_directions/images
 ```
-
-## 실행 결과
-### Aligned Image 생성
-![](images/image_alignment.png)
-
-### Inference 수행 및 Latent 생성
-![](images/inference.png)
-
-### InterfaceGAN Age Direction 조작
-![](images/interface_gan_edit_0.png)
-
-### InterfaceGAN Age Range 조작
-![](images/interface_gan_edit_1.png)
-
-### InterfaceGAN 다양한 Direction 조작
-![](images/interface_gan_edit_2.png)
-
-### SeFa(Semantic Factorization)를 활용하여 StyleGAN으로 생성된 이미지의 잠재 벡터(latents) 조작
-![](images/interface_gan_edit_3.png)
-
-### StyleCLIP 이미지 조작
-**target='face with Hi-top fade hair'**  
-![](images/styleclip_edit_1.png)
-
-**target='smiling face with Hi-top fade hair'**  
-![](images/styleclip_edit_2.png)
