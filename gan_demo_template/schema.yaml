@@ -1,0 +1,49 @@
+title: "23ai Select AI with RAG Demo App Deployment"
+description: "InterFaceGAN 및 StyleCLIP 데모"
+schemaVersion: 1.0.0
+version: "20240724"
+locale: "en"
+variableGroups:
+  - title: "Hidden"
+    visible: false
+    variables:
+      - current_user_ocid
+      - tenancy_ocid
+      - region
+  - title: "Basic Configuration"
+    variables:
+      - compartment_ocid
+      - availability_domain
+  - title: "Compute Configuration"
+    variables:
+      - name_prefix
+      - instance_shape
+variables:
+  current_user_ocid:
+    title: User
+    type: ocid
+    required: true
+  tenancy_ocid:
+    title: Tenancy
+    type: oci:identity:compartment:id
+    required: true
+  compartment_ocid:
+    title: Compartment
+    description: The default compartment for created resources.
+    type: oci:identity:compartment:id
+    required: true
+  region:
+    required: true
+    title: Region
+    type: oci:identity:region:name
+  availability_domain:
+    title: Availability domain
+    type: oci:identity:availabilitydomain:name
+    required: true
+    dependsOn:
+      compartmentId: ${compartment_ocid}
+  name_prefix:
+    title: Instance Name Prefix
+    description: Instance Name Prefix
+    type: string
+    required: true
