@@ -1,9 +1,6 @@
 # InterFaceGAN and StyleCLIP
 이 Notebook은 Max Woolf라는 분이 [original StyleCLIP repo](https://github.com/orpatashnik/StyleCLIP)에 포함된 [original Colab notebook](https://colab.research.google.com/github/orpatashnik/StyleCLIP/blob/main/notebooks/StyleCLIP_global.ipynb)을 수정한 것을 제가 OCI Jupyter Notebook 환경에서 실행할 수 있도록 재구성한 것입니다.
 
-OCI Resource Manager에서 바로 배포할 수 있는 스택입니다. 배포는 **Ashburn** Region에 배포되며, 사용하는 Shape은 **VM.GPU2.1**입니다.Ashburn Region 구독 및 리소스 Limit 확인 필요합니다.  
-[![Deploy to Oracle Cloud](https://oci-resourcemanager-plugin.plugins.oci.oraclecloud.com/latest/deploy-to-oracle-cloud.svg)](https://cloud.oracle.com/resourcemanager/stacks/create?region=us-ashburn-1&zipUrl=https://github.com/the-team-oasis/genaitf-gandemo-rm/archive/refs/heads/main.zip)
-
 1. InterFaceGAN
 GAN에서 Latent Space(잠재 공간)를 조작해서 이미지를 변형하는 방법중 하나로, 생성한 이미지에서 특정 속성(예: 나이, 성별, 미소 등)을 조작할 수 있습니다. InterFaceGAN은 특히 얼굴 이미지 생성 및 조작에 많이 사용되고 있습니다.  
 **실습 노트북:** gan_latent_vector_for_styleclip.ipynb
@@ -11,6 +8,9 @@ GAN에서 Latent Space(잠재 공간)를 조작해서 이미지를 변형하는 
 2. StyleCLIP
 StyleCLIP은 StyleGAN2와 CLIP을 결합한 기술로, 텍스트 설명을 통해 이미지 스타일을 조작할 수 있는 매우 강력한 이미지 생성 및 변형 방법입니다. 실습 노트북은 StyleCLIP의 3가지 이미지 조작 방법중에서 Global directions를 활용한 실습을 해볼 수 있습니다.   
 **실습 노트북:** styleclip_global_directions.ipynb
+
+OCI Resource Manager에서 바로 배포하여 테스트해볼 수 있는 스택입니다. 배포는 **Ashburn** Region에 배포되고, 사용하는 Shape은 **VM.GPU2.1**입니다. * Ashburn Region 구독 및 VM.GPU2.1 리소스 Limit 체크 필요
+[![Deploy to Oracle Cloud](https://oci-resourcemanager-plugin.plugins.oci.oraclecloud.com/latest/deploy-to-oracle-cloud.svg)](https://cloud.oracle.com/resourcemanager/stacks/create?region=us-ashburn-1&zipUrl=https://github.com/the-team-oasis/genaitf-gandemo-rm/archive/refs/heads/main.zip)
 
 ## Setup
 * CUDA 11.0, Python 3.7, Pytorch 1.7.1, Tensorflow-gpu 1.15 번에서 실행할 수 있습니다.
