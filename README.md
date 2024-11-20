@@ -9,7 +9,9 @@ GAN에서 Latent Space(잠재 공간)를 조작해서 이미지를 변형하는 
 StyleCLIP은 StyleGAN2와 CLIP을 결합한 기술로, 텍스트 설명을 통해 이미지 스타일을 조작할 수 있는 매우 강력한 이미지 생성 및 변형 방법입니다. 실습 노트북은 StyleCLIP의 3가지 이미지 조작 방법중에서 Global directions를 활용한 실습을 해볼 수 있습니다.   
 **실습 노트북:** styleclip_global_directions.ipynb
 
-OCI Resource Manager에서 바로 배포하여 테스트해볼 수 있는 스택입니다. 배포는 **Ashburn** Region에 배포되고, 사용하는 Shape은 **VM.GPU2.1**입니다. * Ashburn Region 구독 및 VM.GPU2.1 리소스 Limit 체크 필요합니다.  
+OCI Resource Manager에서 바로 배포하여 테스트해볼 수 있는 스택입니다. (리전 구독 및 리소스 리밋 체크 필요)
+배포 리전: **Ashburn**  
+Shape: **VM.GPU2.1**  
 [![Deploy to Oracle Cloud](https://oci-resourcemanager-plugin.plugins.oci.oraclecloud.com/latest/deploy-to-oracle-cloud.svg)](https://cloud.oracle.com/resourcemanager/stacks/create?region=us-ashburn-1&zipUrl=https://github.com/the-team-oasis/genaitf-gandemo-rm/archive/refs/heads/main.zip)
 
 ## Setup
